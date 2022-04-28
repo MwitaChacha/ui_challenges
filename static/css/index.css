@@ -7,4 +7,22 @@ body {
 
 .heading {
     font-size: 3.5rem;
+    color: #F56D91;
+}
+
+.challenge-icon{
+    width: 70%;
+    height: 30%;
+}
+
+.challenge-heading {
+  
+}
+
+footer{
+    bottom: 0;
+}
+
+hr{   
+    color: black;
 }
