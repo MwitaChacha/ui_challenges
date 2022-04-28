@@ -1,6 +1,30 @@
 {% extends 'base.html' %} {% block content %}
-<div class="text-center py-6">
-  <h1 class="font-bold heading">UI CHALLENGES</h1>
-<p class="font-regular text-sm">By Chacha</p>
+<div class="text-center py-6 w-1/2 mx-auto">
+  <h1 class="font-bold heading py-5">UI CHALLENGES</h1>
+<p class="font-regular text-xs py-5">Hi there! My name is Chacha. I love design! This website showcases some of my attempts in UI Design</p>
 </div>
+<div class="text-center py-5 w-1/2 mx-auto">
+  <h3 class="font-bold text-lg">Why I decided to do this challenge?</h3>
+  <p class="font-regular text-xs py-5">As someone who loves design, I want to really practice to enhance my skills and perfect the art. I have seen lots of inspiring designs across the web and this made to try and put my take across.</p>
+</div>
+<div class="text-center py-5">
+  <h3 class="font-bold text-lg">Tools Used</h3>
+  <p class="font-regular text-xs p-5">Figma, Adobe XD, Adobe Photoshop</p>
+</div>
+<hr class="w-1/4 mx-auto">
+{% for i in challenges %}
+<div class="text-center py-10">
+<h3 class="challenge-heading font-bold text-lg">{{i.title}}</h3>
+<img class="challenge-icon mx-auto py-10" src={{i.page.url}} alt="">
+<p class="font-regular text-xs px-10">{{i.description}}</p>
+</div>
+<hr class="w-1/4 mx-auto">
+{% endfor %}
+<div class="text-center py-10 w-1/2 mx-auto">
+  <h3 class="font-bold text-lg">What I have learnt</h3>
+  <p class="font-regular text-xs py-5">You should just start and everything else will flow. You should be willing and prepared to be seen as foolish when starting something new. Go forth and have no fear!</p>
+</div>
+<footer class="text-center">
+  <p class="text-xs text-gray-400 p-10">© 2022 Jonathan Chacha</p>
+</footer>
 {% endblock %}
